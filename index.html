@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Mirror of You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- --- HOMEPAGE --- -->
+<section id="home" class="page active">
+    <div class="center">
+        <h1 class="title glitch" data-text="MIRROR OF YOU">MIRROR OF YOU</h1>
+        <p class="subtitle">See the version of yourself you hide.</p>
+        <button onclick="goTo('input')" class="btn glow">BEGIN ANALYSIS</button>
+        <p class="tiny">Your reflection may not be the same.</p>
+    </div>
+</section>
+
+<!-- --- INPUT PAGE --- -->
+<section id="input" class="page">
+    <h2 class="input-title glitch" data-text="LET THE MIRROR KNOW YOU">LET THE MIRROR KNOW YOU</h2>
+    <div class="form-box">
+        <input type="text" placeholder="Name">
+        <input type="number" placeholder="Age">
+        <input type="file" id="fileInput">
+        <input type="text" placeholder="What describes you?">
+        <input type="text" placeholder="What scares you most?">
+    </div>
+    <button onclick="startLoading()" class="btn glow" id="showBtn">
+        SHOW MY REFLECTION
+    </button>
+    <div class="silhouette"></div>
+</section>
+
+<!-- --- LOADING PAGE --- -->
+<section id="loading" class="page">
+    <div class="loading-text glitch" data-text="ANALYZING... PEERING DEEPER... SEEING YOU...">
+        ANALYZING...<br>PEERING DEEPER...<br>SEEING YOU...
+    </div>
+    <div class="progress-bar"><div class="bar"></div></div>
+</section>
+
+<!-- --- RESULT PAGE --- -->
+<section id="result" class="page">
+    <div class="photo-frame">
+        <img id="result-img" src="" alt="reflection">
+    </div>
+    <h2 class="bloody-title" data-text="YOUR TRUE SELF IS REVEALED">YOUR TRUE SELF IS REVEALED</h2>
+    <p class="bloody-sub">You have been mirrored.</p>
+    <button class="btn disabled">TRACE LOCKED</button>
+</section>
+
+<!-- --- FINAL PAGE --- -->
+<section id="final" class="page">
+    <h1 class="final-title glitch" data-text="THE WATCHER IS ACTIVE.">THE WATCHER IS ACTIVE.</h1>
+    <p>[ Data Trace : ENABLED ]</p>
+    <p>[ Location   : UNKNOWN ]</p>
+    <p>[ Fear Level  : RISING ]</p>
+    <h3 class="final-quote">You cannot escape your reflection.</h3>
+    <div class="eyes"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
